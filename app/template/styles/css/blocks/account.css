@@ -1,0 +1,48 @@
+.account {
+  margin-bottom: 24px; }
+  .account_add:hover .account__face {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  .account_add .account__face {
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: relative;
+    background: #dbe2e4;
+    cursor: pointer; }
+    .account_add .account__face:before, .account_add .account__face:after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: white; }
+    .account_add .account__face:before {
+      top: 16px;
+      left: 33px;
+      width: 2px;
+      height: 38px; }
+    .account_add .account__face:after {
+      height: 2px;
+      width: 38px;
+      left: 16px;
+      top: 33px; }
+  .account_add .account__title {
+    color: #c2c5c6;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .account:last-of-type {
+    margin-bottom: 0; }
+  .account__face {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 68px;
+    height: 68px; }
+    .account__face img {
+      width: 68px;
+      height: 68px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+  .account__title {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2px;
+    color: #bc4352; }

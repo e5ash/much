@@ -1,0 +1,48 @@
+.account
+	margin-bottom: 24px
+	&_add
+		&:hover
+			.account
+				&__face
+					transform: scale(1.1)
+		.account
+			&__face
+				transition: .3s
+				position: relative
+				background: #dbe2e4
+				cursor: pointer
+				&:before, &:after
+					position: absolute
+					display: block
+					content: ''
+					background: white
+				&:before
+					top: 16px
+					left: 33px
+					width: 2px
+					height: 38px
+				&:after
+					height: 2px
+					width: 38px
+					left: 16px
+					top: 33px
+			&__title
+				color: #c2c5c6
+				padding-left: 5px
+				padding-right: 5px
+		
+	&:last-of-type
+		margin-bottom: 0
+	&__face
+		border-radius: 50%
+		width: 68px
+		height: 68px
+		img
+			width: 68px
+			height: 68px
+			border-radius: 50%
+	&__title
+		font-size: 12px
+		text-align: center
+		padding-top: 2px
+		color: #bc4352

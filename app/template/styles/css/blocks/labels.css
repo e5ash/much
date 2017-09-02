@@ -1,0 +1,9 @@
+.labels {
+  font-size: 0; }
+  .labels_hashtag .label:before {
+    display: inline-block;
+    content: '#'; }
+  .labels__list, .labels__input {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px; }

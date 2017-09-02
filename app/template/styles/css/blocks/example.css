@@ -1,0 +1,35 @@
+.example__wrap {
+  margin-top: 28px;
+  position: relative;
+  margin-left: 36px;
+  width: 479px; }
+  .example__wrap p {
+    position: absolute;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    top: 62px;
+    left: 33px;
+    text-align: center;
+    width: 410px;
+    letter-spacing: .4px; }
+
+.example__checkbox {
+  margin-right: 13px !important; }
+
+.example__input {
+  width: 241px; }
+  .example__input input {
+    width: 100%;
+    letter-spacing: .5px; }
+
+.example__link {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: .5px; }
+  .example__link a {
+    color: #bc4352; }
+    .example__link a:hover {
+      border-color: #bc4352; }

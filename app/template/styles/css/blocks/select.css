@@ -1,0 +1,52 @@
+.select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+  .select_open .select__list {
+    opacity: 1;
+    z-index: 10; }
+  .select_gray p {
+    background-color: #dae1e3; }
+  .select p {
+    position: relative;
+    width: 100%;
+    padding: 14.5px 35px 14.5px 15px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    cursor: pointer; }
+    .select p:before {
+      position: absolute;
+      top: 23px;
+      right: 11px;
+      content: '';
+      background-image: url(../../img/sprite.png);
+      background-position: -46px -39px;
+      width: 8px;
+      height: 4px; }
+  .select__list {
+    opacity: 0;
+    z-index: -2;
+    position: absolute;
+    background: #dbe2e4;
+    width: 100%;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    left: 0;
+    top: 51px;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .select__list-item {
+      font-size: 12px;
+      display: block;
+      padding: 3px 15px;
+      cursor: pointer; }
+      .select__list-item:first-of-type {
+        -webkit-border-radius: 5px 5px 0 0;
+                border-radius: 5px 5px 0 0; }
+      .select__list-item:last-of-type {
+        -webkit-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px; }
+      .select__list-item:hover {
+        background: #CAD0D2; }
+  .select__parsing {
+    display: none; }

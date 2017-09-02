@@ -1,0 +1,8 @@
+.label {
+  display: inline-block;
+  margin-right: 20px; }
+  .label span {
+    margin-right: 4px; }
+  .label .icon {
+    position: relative;
+    cursor: pointer; }

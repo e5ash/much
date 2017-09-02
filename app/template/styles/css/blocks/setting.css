@@ -1,0 +1,21 @@
+.setting {
+  position: relative;
+  border-bottom: 1px solid #e9edee;
+  padding-top: 35px;
+  padding-bottom: 40px; }
+  .setting:last-of-type {
+    border-bottom: none; }
+  .setting__title {
+    font-size: 20px;
+    text-transform: uppercase; }
+    .setting__title + .setting__wrap {
+      margin-top: 18px; }
+  .setting__desc {
+    font-size: 12px;
+    margin-bottom: 18px; }
+  .setting .checkbox {
+    margin-right: 40px; }
+    .setting .checkbox:last-of-type {
+      margin-right: 0; }
+  .setting .select {
+    margin-right: 28px; }

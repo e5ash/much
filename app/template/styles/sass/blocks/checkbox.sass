@@ -1,0 +1,43 @@
+.checkbox
+	display: inline-block
+	&_gray
+		label
+			&:before
+				border: 1px solid #dbe2e4 !important
+				background: #dbe2e4
+
+		
+	input
+		display: none
+		&:checked
+			+ label
+				&:after
+					opacity: 1
+	label
+		position: relative
+		padding-left: 35px
+		cursor: pointer
+		&:before
+			content: ''
+			position: absolute
+			width: 18px
+			height: 18px
+			border-radius: 5px
+			left: 0
+			top: 0
+			border: 1px solid #63d0ef
+		&:after
+			opacity: 0
+			content: ''
+			position: absolute
+			left: 4px
+			top: 6px
+			background-image: url(../../img/sprite.png)
+			background-position: -42px -30px
+			width: 12px
+			height: 9px
+			transition: .3s
+	span
+		display: block
+		font-size: 12px
+		padding-left: 35px

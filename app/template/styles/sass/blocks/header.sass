@@ -1,0 +1,36 @@
+.header
+	background: url('../../img/bg/header-subpage.png') no-repeat center top
+	// background-size: cover
+	height: 80px
+	&__logo
+		display: block
+		position: relative
+		top: 14px
+		&:hover
+			img
+				transform: scale(0.95)
+		img
+			transition: .3s
+	&__content
+		font-size: 0
+	&__links
+		text-align: right
+		padding-top: 30px
+		li
+			font-size: 12px
+			margin-left: 8px
+			&:first-of-type
+				margin-left: 0
+		a
+			color: white
+			padding: 5px 13px
+			border-radius: 4px
+			transition: .3s
+			&:hover
+				opacity: .8
+	&__face
+		padding-top: 5px
+		img
+			border-radius: 50%
+			width: 68px
+			height: 68px

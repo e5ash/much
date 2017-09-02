@@ -1,0 +1,53 @@
+.info {
+  position: absolute;
+  top: 37px;
+  right: 15px; }
+  .info_active .info__i {
+    background-color: #46c6ea; }
+  .info__i {
+    background-color: #dae1e3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .info__i .icon {
+      position: relative;
+      left: 1px;
+      top: 1px; }
+  .info__wrap {
+    display: none;
+    position: absolute;
+    width: 265px;
+    font-size: 12px;
+    text-align: center;
+    bottom: 36px;
+    left: -120px;
+    border: 1px solid #47c5e9;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px 13px 12px;
+    background: white; }
+    .info__wrap:after {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 8px;
+      left: 50%;
+      bottom: -8px;
+      margin-left: -8px;
+      background: url("../../img/bg/info-triangle.png"); }
+  .info__close {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .info__close:hover {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }

@@ -1,0 +1,31 @@
+.time__text, .time__input {
+  display: inline-block;
+  vertical-align: middle; }
+
+.time__input {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #dae1e3;
+  width: 63px;
+  padding: 14.5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto;
+  outline: none; }
+  .time__input::-webkit-input-placeholder {
+    color: #363f41; }
+  .time__input::-moz-placeholder {
+    color: #363f41; }
+  .time__input:-ms-input-placeholder {
+    color: #363f41; }
+  .time__input::placeholder {
+    color: #363f41; }
+
+.time__text_start {
+  margin-right: 11px; }
+
+.time__text_line {
+  margin-right: 20px; }
+
+.time__select {
+  margin-right: 10px !important; }
