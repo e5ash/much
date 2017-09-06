@@ -7,8 +7,12 @@ $(document).ready(function($) {
 		info.toggleClass('info_active');
 	});
 	
-
-
+	$('form').keydown(function(event){
+		if(event.keyCode == 13) {
+			event.preventDefault();
+			return false;
+		}
+	});
 
 	/* Labels */
 	

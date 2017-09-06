@@ -1637,6 +1637,10 @@ input[disabled] {
   color: #bc4352;
   margin-top: 18px;
   margin-bottom: 65px; }
+  .settings__button-desc a {
+    color: #bc4352; }
+    .settings__button-desc a:hover {
+      border-color: #bc4352; }
 
 .settings__remove {
   text-transform: uppercase;
