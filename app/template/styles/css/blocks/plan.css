@@ -2,31 +2,6 @@
   padding: 16px 20px 0;
   text-align: center;
   background: white; }
-  .plan_blue {
-    color: white;
-    background: #46c6ea; }
-    .plan_blue:before, .plan_blue:after {
-      z-index: 0;
-      content: '';
-      width: 25px;
-      background: #69e3f5;
-      height: 120px;
-      display: block;
-      position: absolute;
-      bottom: 35px;
-      left: -57px;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
-    .plan_blue:after {
-      bottom: 38px;
-      left: -18px;
-      width: 15px;
-      background: #54d1ee; }
-    .plan_blue .plan__title span {
-      color: white; }
-    .plan_blue .plan__data li:before {
-      border-color: white; }
   .plan__title {
     font-weight: 100;
     text-transform: uppercase;

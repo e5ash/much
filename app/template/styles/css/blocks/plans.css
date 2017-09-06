@@ -15,8 +15,40 @@
             border-radius: 5px;
     overflow: hidden;
     position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
     -webkit-box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25);
             box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25); }
+    .plans .plan:before, .plans .plan:after {
+      -webkit-transition: .3s;
+      transition: .3s;
+      opacity: 0;
+      z-index: 0;
+      content: '';
+      width: 25px;
+      background: #69e3f5;
+      height: 120px;
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      left: -57px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .plans .plan:after {
+      bottom: 38px;
+      left: -18px;
+      width: 15px;
+      background: #54d1ee; }
+    .plans .plan:hover {
+      color: white;
+      background: #46c6ea; }
+      .plans .plan:hover:before, .plans .plan:hover:after {
+        opacity: 1; }
+      .plans .plan:hover .plan__title span {
+        color: white; }
+      .plans .plan:hover .plan__data li:before {
+        border-color: white; }
     .plans .plan__price {
       padding-bottom: 20px;
       margin-top: 35px; }

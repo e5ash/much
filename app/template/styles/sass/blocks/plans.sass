@@ -16,8 +16,42 @@
 		border-radius: 5px
 		overflow: hidden
 		position: relative
+		transition: .3s
 		box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25)
-
+		&:before, &:after
+			transition: .3s
+			opacity: 0
+			z-index: 0
+			content: ''
+			width: 25px
+			background: #69e3f5
+			height: 120px
+			display: block
+			position: absolute
+			bottom: 35px
+			left: -57px
+			-webkit-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:after
+			bottom: 38px
+			left: -18px
+			width: 15px
+			background: #54d1ee
+		&:hover
+			color: white
+			background: #46c6ea
+			&:before, &:after
+				opacity: 1
+			.plan
+				&__title
+					span
+						color: white
+					
+				&__data
+					li
+						&:before
+							border-color: white
 		
 		&__price
 			padding-bottom: 20px
