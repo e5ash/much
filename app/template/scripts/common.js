@@ -62,87 +62,22 @@ $(document).ready(function($) {
 	});
 
 
-	var paymentPrice = $('.payment__price');
+	var paymentPrice = $('.payment__price'),
+		chooseSelect = $('.select_choose-plan');
 
-	/* Select */
-	var select = $('.select');
-	select.each(function() {
-		var parent = $(this),
-			selectTitle = $(this).find($('.select__title')),
-			selectList = $(this).find($('.select__list')),
-			selectParsing = $(this).find($('.select__parsing')),
-			selectParsingItem = $(this).find($('.select__parsing option'));
+	function choosePlan(select) {
+		var option = select.find('option:selected'),
+			price = option.attr('data-option-price');
+		paymentPrice.html(price);
+	}
+	choosePlan(chooseSelect);
 
-		if (selectParsing) {
-			selectParsingItem.each(function() {
-				selectParsingItemText = $(this).text();
-				selectParsingItemValue = $(this).attr('value');
-				
-				if (parent.hasClass('select_payment')) {
-					var selectPrice = $(this).attr('data-option-price'),
-						selectLabel = $(this).attr('label'),
-						selectString = '<li class="select__list-item" data-option-price="'+ selectPrice +'" data-target="' + selectParsingItemValue + '"><span>' + selectParsingItemText+ '</span> '+ selectLabel + '</li>';
-				}
-				else {
-					var selectString = '<li class="select__list-item" data-target="' + selectParsingItemValue + '">' + selectParsingItemText + '</li>';
-					
-				}
-				selectList.append(selectString);
-				if ($(this).attr('selected')) {
-					selectTitle.text(selectParsingItemText);
-					
-					if (parent.hasClass('select_payment')) {
-						paymentPrice.html(selectPrice);
-						selectTitle.html('<span>'+selectParsingItemText + '</span>: ' + selectLabel);
-					} else {
-						selectTitle.html(selectParsingItemText);
-					}
-				}
-				selectParsingItemText = selectParsingItemValue = null;
-			});
-		}
-		parent = selectTitle = selectList = selectParsing = selectParsingItem = selectString = null;
+	chooseSelect.change(function() {
+		choosePlan(chooseSelect);
 	});
-	function selectOpen(){
-		$('.select__title').click(function() {
-			var parent = $(this).parents('.select');
-			parent.toggleClass('select_open');
-			parent = null;
+	 
+	 $('select').styler();
 
-		});
-	}
-	selectOpen();
-
-	function selectItemActive() {
-		$('.select__list-item').click(function() {
-			var parent = $(this).parents('.select'),
-				parsingItem = parent.find($('.select__parsing option')),
-				attr = $(this).attr('data-target'),
-				title = parent.find($('.select__title'));
-
-			parsingItem.each(function() {
-				$(this).removeAttr('selected');
-				if ($(this).attr('value') == attr) {
-					var text = $(this).text();
-					if (parent.hasClass('select_payment')) {
-						var price = $(this).attr('data-option-price'),
-							label = $(this).attr('label');
-						title.html('<span>'+text+'</span>: ' + label);
-						paymentPrice.html(price);
-					} else {
-						title.html(text);
-					}
-					
-					$(this).attr('selected', 'selected');
-				}
-			});
-			parent.toggleClass('select_open');
-			parent = parsingItem = attr = title = null;
-
-		});
-	}
-	selectItemActive();
-	select = null;
 
 
 
@@ -256,30 +191,9 @@ $(document).ready(function($) {
 	});
 
 
-	/* Responsive */
-	$(window).on('load resize', function(event) {
-		var windowWidth = $(window).width();
-		if (windowWidth > 767) {
-			$(".time__input input").mask("9.k9");
-			accsList.removeAttr('style');
-			$('.example__input input').attr('placeholder','Promotional text of your company');
-		} else {
-			$(".time__input input").mask("9.k9 hM");
-			timeInputStart.attr('placeholder','9.00 AM');
-			timeInputEnd.attr('placeholder','9.00 PM');
-			$('.example__input input').attr('placeholder','Promotional text...');
-		}
-		if (windowWidth < 610) {
-			if (dots) {
-				var loginWidth = $('.loggin').width();
-				step.each(function(index, el) {
-					$(this).width(loginWidth);
-				});
-			}
-		}
-	});
+	
 
-	/* Slider */
+	/* Sliders */
 	$('.reviews__list').slick({
 		slidesToShow: 3,
 		slidesToScroll: 3,
@@ -301,6 +215,18 @@ $(document).ready(function($) {
       		}
 		}]
 	})
+	$('.how__icons').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-arrow slick-prev"><i class="icon icon-arrow-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-arrow slick-next"><i class="icon icon-arrow-right"></i></button>',
+		responsive: [{
+			breakpoint: 768,
+      		settings: {
+      			slidesToShow: 1
+      		}
+		}]
+	});
 
 	/* Feture */
 
@@ -315,23 +241,49 @@ $(document).ready(function($) {
 	feture();
 
 
-	if (whyItem.hasClass('why__item_active')) {
-		var count = $('.why__item.why__item_active').attr('data-why-count'),	
-			item = $('.feture__item[data-feture-count='+count+']');
-		item.slideDown(0);
-	}
+	
 
-	whyItem.click(function(event) {
-		var count = $(this).attr('data-why-count'),	
-			item = $('.feture__item[data-feture-count='+count+']');
-		if (!$(this).hasClass('why__item_active')) {
-			whyItem.removeClass('why__item_active');
-			$(this).addClass('why__item_active');
-			fetureItem.slideUp(300);
-			item.slideDown(300);
-		} else{
+	
+	
+
+	/* Responsive */
+	$(window).on('load resize', function(event) {
+		var windowWidth = $(window).width();
+		if (windowWidth > 767) {
+			$(".time__input input").mask("9.k9");
+			accsList.removeAttr('style');
+			$('.example__input input').attr('placeholder','Promotional text of your company');
+			fetureItem.removeAttr('style');
 			
+		} else {
+			$(".time__input input").mask("9.k9 hM");
+			timeInputStart.attr('placeholder','9.00 AM');
+			timeInputEnd.attr('placeholder','9.00 PM');
+			$('.example__input input').attr('placeholder','Promotional text...');
+			if (whyItem.hasClass('why__item_active')) {
+				var count = $('.why__item.why__item_active').attr('data-why-count'),	
+					item = $('.feture__item[data-feture-count='+count+']');
+				item.slideDown(0);
+			}
+			whyItem.click(function(event) {
+				var count = $(this).attr('data-why-count'),	
+					item = $('.feture__item[data-feture-count='+count+']');
+				if (!$(this).hasClass('why__item_active')) {
+					whyItem.removeClass('why__item_active');
+					$(this).addClass('why__item_active');
+					fetureItem.slideUp(300);
+					item.slideDown(300);
+				}
+			});
+		}
+		if (windowWidth < 610) {
+			if (dots) {
+				var loginWidth = $('.loggin').width();
+				step.each(function(index, el) {
+					$(this).width(loginWidth);
+				});
+			}
 		}
 	});
-	
+
 });

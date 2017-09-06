@@ -29,13 +29,13 @@
   outline: none;
   width: 100%; }
   .input_default input::-webkit-input-placeholder {
-    color: #363f41; }
+    color: gray; }
   .input_default input::-moz-placeholder {
-    color: #363f41; }
+    color: gray; }
   .input_default input:-ms-input-placeholder {
-    color: #363f41; }
+    color: gray; }
   .input_default input::placeholder {
-    color: #363f41; }
+    color: gray; }
 
 .input_md {
   width: 295px; }

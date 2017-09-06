@@ -61,6 +61,7 @@
 	<!-- `Рабочая область` -->
 	<main class="main">
 		<div class="container">
+			<form>
 			<div class="row">
 				<!-- `Боковая панель` -->
 				<aside class="aside col-md-1 col-sm-2">
@@ -71,29 +72,29 @@
 
 						<div class="accounts__list">
 							<!-- `Аккаунт` -->
-							<div class="account account_login">
+							<a href="#" class="account account_login">
 								<div class="account__face"><img src="upload/faces/1.png" alt=""></div>
 								<div class="account__title">Facebook</div>
-							</div>
+							</a>
 							<!-- Конец `Аккаунт` -->
 
 							<!-- `Аккаунт` -->
-							<div class="account account_login">
+							<a href="#" class="account account_login">
 								<div class="account__face"><img src="upload/faces/1.png" alt=""></div>
-								<div class="account__title">LinkedIn</div>
-							</div>
+								<div class="account__title">Facebook</div>
+							</a>
 							<!-- Конец `Аккаунт` -->
 
-							<div class="account account_login">
+							<a href="#" class="account account_login">
 								<div class="account__face"><img src="upload/faces/1.png" alt=""></div>
-								<div class="account__title">Twitter</div>
-							</div>
+								<div class="account__title">Facebook</div>
+							</a>
 
 							<!-- `Аккаунт - подключение` -->
-							<div class="account account_add">
+							<a href="#" class="account account_add">
 								<div class="account__face"></div>
 								<div class="account__title">Add account <span>(2 left)</span></div>
-							</div>
+							</a>
 							<!-- Конец `Аккаунт - подключение` -->
 						</div>
 					</div>
@@ -198,24 +199,20 @@
 								</div>
 								<div class="setting__wrap">
 									<!-- `Выпадающий список` -->
-									<div class="select select_gray">
-										<p class="select__title">8</p>
-										<ul class="select__list"></ul>
-										<select class="select__parsing">
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-											<option value="10">10</option>
-											<option value="11">11</option>
-											<option value="12">12</option>
-										</select>
-									</div>
+									<select class="styler select select select_gray">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
 									<!-- Конец `Выпадающий список` -->
 									<p class="inline-block">posts per day</p>
 								</div>
@@ -239,24 +236,16 @@
 									<div class="time">
 										<div class="time__text time__text_start">Start</div>
 										<div class="time__input time__input_start input input_default input_xs"><input type="text" placeholder="9.00"></div>
-										<div class="time__select time__select_start select select_transparent">
-											<p class="select__title"></p>
-											<ul class="select__list"></ul>
-											<select class="select__parsing">
-												<option value="am" selected="selected">AM</option>
-												<option value="pm">PM</option>
-											</select>
-										</div>
+										<select class="styler select select_transparent">
+											<option value="am" selected="selected">AM</option>
+											<option value="pm">PM</option>
+										</select>
 										<div class="time__text time__text_line">-</div>
 										<div class="time__input time__input_end input input_default input_xs"><input type="text" placeholder="9.00"></div>
-										<div class="time__select select select_transparent">
-											<p class="select__title">8</p>
-											<ul class="select__list"></ul>
-											<select class="select__parsing">
-												<option value="am">AM</option>
-												<option value="pm" selected="selected">PM</option>
-											</select>
-										</div>
+										<select class="styler select select_transparent">
+											<option value="am">AM</option>
+											<option value="pm" selected="selected">PM</option>
+										</select>
 										<div class="time__text time__text_end">End</div>
 									</div>
 									<!-- Конец `Настройка времени` -->
@@ -408,7 +397,7 @@
 			<button class="setting__button button button-red"><span>save settings</span></button>
 			<div class="settings__button-desc">Information for invoices</div>
 			<div class="settings__remove">REMOVE ACCOUNT</div>
-
+			</div>
 		</div>
 	</main>
 	<!-- Конец `Рабочая область` -->

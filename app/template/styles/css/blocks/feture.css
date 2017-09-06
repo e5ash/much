@@ -2,10 +2,6 @@
   color: white;
   background: #47c5e9;
   padding-bottom: 26px; }
-  .feture_middle {
-    padding-left: 46px; }
-  .feture_right {
-    padding-left: 32px; }
   .feture__title {
     font-size: 36px;
     text-align: center;
@@ -18,7 +14,7 @@
     margin-bottom: 35px; }
   .feture__sublist {
     margin-bottom: 48px;
-    height: 310px; }
+    min-height: 320px; }
     .feture__sublist li {
       position: relative;
       display: block;
@@ -35,6 +31,7 @@
         font-size: 20px;
         letter-spacing: .8px; }
   .feture__subdesc {
+    display: table-cell;
     text-transform: uppercase;
     font-weight: 700;
     border: 1px solid #ffffff;
@@ -42,33 +39,41 @@
             border-radius: 5px;
     text-align: center;
     height: 90px;
-    padding-top: 15px;
-    max-width: 330px; }
-    .feture__subdesc_fixed {
-      padding-top: 4px; }
+    vertical-align: middle;
+    max-width: 330px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .feture__item_left {
+    padding-right: 40px; }
+  .feture__item_middle {
+    padding-left: 46px; }
+  .feture__item_right {
+    padding-left: 32px; }
 
 @media screen and (max-width: 1199px) {
   .feture__list .col:nth-of-type(3) .feture__subdesc {
     padding-top: 14px; }
   .feture__subtitle {
     font-size: 15px;
-    height: 80px; }
+    min-height: 80px; }
     .feture__subtitle br {
       display: none; }
   .feture__sublist {
-    height: 285px;
+    min-height: 285px;
     margin-bottom: 30px; }
     .feture__sublist li span {
       font-size: 15px; }
     .feture__sublist li br {
-      display: none; } }
+      display: none; }
+  .feture__item {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media screen and (max-width: 991px) {
   .feture__subdesc {
     height: 110px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
     letter-spacing: 1px;
     width: 100%; }
     .feture__subdesc br {
@@ -78,12 +83,12 @@
   .feture__item {
     display: none; }
   .feture__subtitle {
-    height: auto;
+    min-height: 1px;
     margin-bottom: 23px; }
   .feture__sublist {
-    height: auto; }
+    min-height: 1px; }
   .feture__subdesc {
-    height: auto;
+    min-height: 1px;
     width: 100%;
     padding: 10px;
     max-width: 100%; } }

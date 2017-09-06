@@ -2,6 +2,34 @@
 	position: relative
 	display: inline-block
 	vertical-align: middle
+	.jq-selectbox__select
+		height: 49px
+		font-size: 15px
+		font-family: Roboto
+		padding: 7px 30px 0 15px
+		color: #363f41
+		border: none !important
+		box-shadow: none
+		text-shadow: none
+		font-weight: 500
+		color: #363f41
+	.jq-selectbox__dropdown
+		li
+			display: block
+	.jq-selectbox__trigger
+		width: 26px
+		border: none
+		&:before
+			content: ''
+			top: 23px
+			right: 10px
+			position: absolute
+			background-image: url(../../img/sprite.png)
+			background-position: -274px -72px
+			width: 8px
+			height: 4px
+		.jq-selectbox__trigger-arrow
+			display: none
 	&_open
 		.select
 			&__list
@@ -9,62 +37,20 @@
 				opacity: 1
 				z-index: 10
 	&_gray
-		p
-			background-color: #dae1e3
+		.jq-selectbox__select
+			background: #dae1e3
 	&_default
-		display: block
-		width: 100%
-		p
-			border: 1px solid #dae1e3
-			width: 100%
-		.select
-			&__list
-				border: 1px solid #dae1e3
-				background: white
-	p
-		position: relative
-		width: 100%
-		// background: #dbe2e4
-		padding: 14.5px 35px 14.5px 15px
-		border-radius: 5px
-		font-size: 15px
-		cursor: pointer
-		&:before
-			position: absolute
-			top: 23px
-			right: 11px
-			content: ''
-			background-image: url(../../img/sprite.png)
-			background-position: -274px -72px
-			width: 8px
-			height: 4px
-	&__list
-		display: none
-		opacity: 0
-		z-index: -2
-		position: absolute
-		background: #dbe2e4
-		width: 100%
-		border-radius: 5px
-		left: 0
-		top: 51px
-		height: 200px
-		transition: .3s
-		overflow-y: auto
-		&-item
-			font-size: 12px
-			display: block
-			padding: 3px 15px
-			cursor: pointer
-			&:first-of-type
-				border-radius: 5px 5px 0 0
-			&:last-of-type
-				border-radius: 0 0 5px 5px
-			&:hover
-				background: #CAD0D2
-	&__parsing
-		display: none
+		.jq-selectbox__select
+			background: white
+			border: 1px solid #dae1e3 !important
 
+	&_transparent
+		.jq-selectbox__select
+			background: transparent
+		
+	&_choose-plan
+		.jq-selectbox__select
+			border-color: black !important
 	&_md
 		width: 308px
 	&_sm

@@ -129,6 +129,15 @@
 			transform: rotate(-45deg)
 @media (max-width: 767px)
 	.button
+		&-red
+			&:hover
+				&:before, &:after
+					top: -30px
+					transform: rotate(-45deg) !important
+				&:before
+					width: 30px
+				&:after
+					width: 15px
 		&-red, &_gray
 			margin-left: -15px
 			margin-right: -15px

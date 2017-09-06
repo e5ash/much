@@ -14,7 +14,9 @@
     -webkit-border-radius: 5px;
             border-radius: 5px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    -webkit-box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25); }
     .plans .plan__price {
       padding-bottom: 20px;
       margin-top: 35px; }
@@ -34,6 +36,10 @@
       font-size: 25px;
       padding-top: 10px;
       padding-bottom: 12px; }
+
+@media screen and (max-width: 1450px) {
+  .plans {
+    background-size: 2100px 130%; } }
 
 @media screen and (max-width: 1199px) {
   .plans {
@@ -65,8 +71,13 @@
   .plans .plan {
     -webkit-border-radius: 0;
             border-radius: 0; }
+    .plans .plan__data {
+      padding-left: 10px;
+      padding-right: 10px; }
     .plans .plan__button {
       margin-left: 0;
       margin-right: 0;
       -webkit-border-radius: 0;
-              border-radius: 0; } }
+              border-radius: 0; }
+    .plans .plan__trial {
+      font-size: 20px; } }

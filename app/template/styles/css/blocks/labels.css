@@ -3,7 +3,8 @@
   .labels_hashtag .label:before {
     display: inline-block;
     content: '#'; }
-  .labels__list, .labels__input {
+  .labels__list {
     display: inline-block;
     vertical-align: middle;
-    font-size: 15px; }
+    font-size: 15px;
+    margin-bottom: 10px; }

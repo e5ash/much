@@ -69,56 +69,54 @@
 					<div class="text">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 					</div>
-					<div class="payment row">
-						<div class="col-md-3">
-							<!-- `Тарифный план` -->
-							<div class="payment__title">YOUR PLAN:</div>
-							<div class="payment__plan plan">
-								<div class="plan__title">plan <span>mini</span></div>
-								<div class="plan__data">
-									<ul>
-										<li>5 social media accounts</li>
-										<li>Your company’s promotional bar with the posts</li>
-									</ul>
+					<form>
+						<div class="payment row">
+							<div class="col-md-3">
+								<!-- `Тарифный план` -->
+								<div class="payment__title">YOUR PLAN:</div>
+								<div class="payment__plan plan">
+									<div class="plan__title">plan <span>mini</span></div>
+									<div class="plan__data">
+										<ul>
+											<li>5 social media accounts</li>
+											<li>Your company’s promotional bar with the posts</li>
+										</ul>
+									</div>
+									<div class="plan__price">
+										<!-- <div class="plan__trial">No credit card required</div> -->
+										<div class="plan__currency">$</div>
+										<div class="plan__count"><span>20</span></div>
+										<div class="plan__term">month</div>
+									</div>
 								</div>
-								<div class="plan__price">
-									<!-- <div class="plan__trial">No credit card required</div> -->
-									<div class="plan__currency">$</div>
-									<div class="plan__count"><span>20</span></div>
-									<div class="plan__term">month</div>
-								</div>
+								<!-- Конец `Тарифный план` -->
 							</div>
-							<!-- Конец `Тарифный план` -->
-						</div>
-						<div class="col-md-9">
-							<!-- `Форма оплаты` -->
-							<div class="payment__wrap">
-								<div class="form-line">
-									<div class="form-group payment__card">
-										<span>Card number</span>
-										<div class="payment__input input input_default input_md"><input type="text" class="ttu card-number" placeholder="xxxx - xxxx - xxxx - xxxx - xxxx"></div>
+							<div class="col-md-9">
+								<!-- `Форма оплаты` -->
+								<div class="payment__wrap">
+									<div class="form-line">
+										<div class="form-group payment__card">
+											<span>Card number</span>
+											<div class="payment__input input input_default input_md"><input type="text" class="ttu card-number" placeholder="xxxx - xxxx - xxxx - xxxx - xxxx"></div>
+										</div>
+										<div class="form-group payment__mmyy">
+											<span>MM/YY</span>
+											<div class="payment__input input input_default input_sm"><input type="text" class="ttu mmyy" placeholder="xx / xx"></div>
+										</div>
+										<div class="form-group payment__cvc">
+											<span>CVC</span>
+											<div class="payment__input input input_default input_sm"><input type="text" class="ttu cvc" placeholder="xxx"></div>
+										</div>
 									</div>
-									<div class="form-group payment__mmyy">
-										<span>MM/YY</span>
-										<div class="payment__input input input_default input_sm"><input type="text" class="ttu mmyy" placeholder="xx / xx"></div>
-									</div>
-									<div class="form-group payment__cvc">
-										<span>CVC</span>
-										<div class="payment__input input input_default input_sm"><input type="text" class="ttu cvc" placeholder="xxx"></div>
-									</div>
-								</div>
-								<div class="form-line">
-									<div class="form-group payment__holder">
-										<span>Card Holder</span>
-										<div class="payment__input  input input_default input_md"><input type="text" class="ttu"></div>
-									</div>
-									<div class="form-group payment__country">
-										<span>Country</span>
-										<!-- `Выпадающий список` -->
-										<div class="select select_default select_md">
-											<p class="select__title"></p>
-											<ul class="select__list"></ul>
-											<select class="select__parsing">
+									<div class="form-line">
+										<div class="form-group payment__holder">
+											<span>Card Holder</span>
+											<div class="payment__input  input input_default input_md"><input type="text" class="ttu"></div>
+										</div>
+										<div class="form-group payment__country">
+											<span>Country</span>
+											<!-- `Выпадающий список` -->
+											<select class="styler select select_default select_md">
 												<option value="Australia" selected>Australia</option>
 												<option value="Austria">Austria</option>
 												<option value="Azerbaijan">Azerbaijan</option>
@@ -374,15 +372,15 @@
 												<option value="JanMayen">Jan Mayen</option>
 												<option value="Japan">Japan</option>
 											</select>
+											<!-- Конец `Выпадающий список` -->
 										</div>
-										<!-- Конец `Выпадающий список` -->
 									</div>
+									<button type="submit" class="payment__button button button-red"><span>subscribe now!</span></button>
 								</div>
-								<button class="payment__button button button-red"><span>subscribe now!</span></button>
+								<!-- Конец `Форма оплаты` -->
 							</div>
-							<!-- Конец `Форма оплаты` -->
 						</div>
-					</div>
+					</form>
 				</article>
 				<!-- Конец `Контент` -->
 			</div>

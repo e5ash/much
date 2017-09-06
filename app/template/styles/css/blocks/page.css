@@ -16,109 +16,13 @@
   background-size: cover;
   height: 100%;
   height: 100vh; }
-  .page_loggin .header {
-    padding-top: 7%;
-    background: none;
-    height: auto; }
-    .page_loggin .header__logo {
-      width: 200px;
-      top: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 5%; }
-    .page_loggin .header__title {
-      font-size: 36px;
-      text-transform: uppercase;
-      text-align: center;
-      color: white;
-      letter-spacing: .5px; }
-  .page_loggin .footer__links {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding-bottom: 30px; }
-    .page_loggin .footer__links a {
-      color: white; }
-      .page_loggin .footer__links a:hover {
-        color: white;
-        opacity: .5; }
-
-.page_main .header {
-  height: auto;
-  background: url("../../img/bg/bg.png") no-repeat center top;
-  background-size: cover;
-  padding-top: 71px;
-  padding-bottom: 55px;
-  color: white;
-  text-align: center; }
-  .page_main .header:after {
-    background: url("../../img/bg/triangle-bg.png") repeat-x center; }
-  .page_main .header__logo {
-    top: 0;
-    width: 349px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 63px; }
-  .page_main .header__title {
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-  .page_main .header__dots {
-    margin-top: 5px;
-    margin-bottom: 10px; }
-  .page_main .header__desc {
-    max-width: 1090px;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 1px;
-    font-size: 20px;
-    margin-bottom: 29px; }
-  .page_main .header__icons {
-    font-size: 0; }
-  .page_main .header__icon {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    height: 91px;
-    line-height: 91px;
-    width: 68px;
-    margin-left: 48px;
-    margin-right: 48px; }
-    .page_main .header__icon:after {
-      position: absolute;
-      display: block;
-      bottom: -4px;
-      content: '';
-      width: 68px;
-      height: 4px;
-      -webkit-border-radius: 2px;
-              border-radius: 2px;
-      background-color: #ffffff;
-      margin-left: auto;
-      margin-right: auto; }
-    .page_main .header__icon .icon {
-      vertical-align: bottom;
-      margin-bottom: 18px; }
-  .page_main .header__button {
-    margin-top: 70px; }
-  .page_main .header__login {
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 13px; }
-    .page_main .header__login a {
-      color: #f894a0; }
-      .page_main .header__login a:hover {
-        border-color: #f894a0; }
 
 .page_main .main {
   padding-top: 0; }
 
 @media screen and (max-height: 767px) {
   .page_loggin {
-    height: 100%; }
-    .page_loggin .footer__links {
-      position: relative; } }
+    height: 100%; } }
 
 @media screen and (max-width: 1199px) {
   .page_text {
@@ -126,15 +30,7 @@
   .page_lk .main {
     padding-top: 48px; }
   .page_contact .text {
-    padding-bottom: 20px; }
-  .page_main .header {
-    padding-top: 34px; }
-    .page_main .header__logo {
-      margin-bottom: 15px; }
-    .page_main .header__desc .color-blue {
-      color: white; }
-    .page_main .header__button {
-      margin-top: 50px; } }
+    padding-bottom: 20px; } }
 
 @media screen and (max-width: 767px) {
   .page_lk .main {
@@ -144,30 +40,4 @@
     padding-top: 26px;
     margin-top: 0; }
   .page_contact .text {
-    padding-bottom: 0; }
-  .page_main .header__logo {
-    max-width: 100%;
-    padding-top: 0; }
-  .page_main .header__title {
-    font-size: 25px; }
-  .page_main .header__desc {
-    font-size: 15px;
-    margin-bottom: 7px; }
-  .page_main .header__button {
-    margin-top: 30px; }
-  .page_main .header__icon {
-    width: 43px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 68px;
-    line-height: 68px; }
-    .page_main .header__icon:after {
-      width: 43px; }
-    .page_main .header__icon .icon {
-      -webkit-transform: scale(0.7);
-          -ms-transform: scale(0.7);
-              transform: scale(0.7);
-      margin-bottom: 0; }
-      .page_main .header__icon .icon-linkedin, .page_main .header__icon .icon-twitter {
-        position: relative;
-        top: -3px; } }
+    padding-bottom: 0; } }

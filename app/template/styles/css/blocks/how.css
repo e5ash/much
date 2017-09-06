@@ -1,6 +1,6 @@
 .how {
-  padding-top: 53px;
-  padding-bottom: 65px;
+  margin-top: 53px;
+  margin-bottom: 65px;
   text-align: center; }
   .how__title {
     padding-bottom: 45px; }
@@ -64,8 +64,17 @@
           position: absolute;
           top: 19px;
           right: -35px; }
+      .how__plus p:nth-of-type(2) {
+        padding-left: 40px;
+        padding-right: 40px; }
   .how__icons {
     margin-top: 70px; }
+    .how__icons .slick-arrow {
+      top: 0; }
+    .how__icons .slick-prev {
+      left: 0; }
+    .how__icons .slick-next {
+      right: 0; }
   .how__icon {
     display: inline-block;
     width: 32%;
@@ -75,7 +84,9 @@
       margin-bottom: 19px; }
     .how__icon-title {
       font-size: 20px;
-      letter-spacing: .7px; }
+      letter-spacing: .7px;
+      padding-left: 10px;
+      padding-right: 10px; }
   .how__desc {
     width: 100%;
     max-width: 560px;
@@ -102,7 +113,7 @@
 
 @media screen and (max-width: 767px) {
   .how {
-    padding-bottom: 50px; }
+    margin-bottom: 50px; }
     .how__subtitle:before, .how__subtitle:after {
       display: none; }
     .how__plus {
@@ -132,7 +143,13 @@
       .how__icon:last-of-type {
         margin-bottom: 0; }
     .how__desc {
-      margin-top: 40px; } }
+      margin-top: 40px;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: auto;
+      max-width: inherit; } }
 
 @media screen and (max-width: 450px) {
   .how__desc br {

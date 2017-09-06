@@ -3,10 +3,13 @@
 	position: relative
 	background: white
 	margin-bottom: 110px
+	padding-top: 10px
 	&__list
+		margin-bottom: 32px
 		.slick-arrow
 			display: none !important
 		.slick-dots
+			position: relative
 			li
 				width: 22px
 				height: 22px
@@ -21,9 +24,13 @@
 			button
 				display: none
 	&__item
-		padding-top: 65px
+		padding-top: 55px
+		&_color
+			background: #dbf3fc
+			
 	&__persona
 		font-size: 0
+		padding-left: 24px
 		
 	&__img
 		img
@@ -45,7 +52,14 @@
 		font-style: italic
 		text-align: center
 		padding-bottom: 58px
-		
+@media screen and (max-width: 1199px)
+	.reviews
+		&__item
+			&_color
+				background: white
+		&__persona
+			padding-left: 0
+			
 @media screen and (max-width: 767px)
 	.reviews
 		&__item

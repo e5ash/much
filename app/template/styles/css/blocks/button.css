@@ -156,6 +156,15 @@
               transform: rotate(-45deg); }
 
 @media (max-width: 767px) {
+  .button-red:hover:before, .button-red:hover:after {
+    top: -30px;
+    -webkit-transform: rotate(-45deg) !important;
+        -ms-transform: rotate(-45deg) !important;
+            transform: rotate(-45deg) !important; }
+  .button-red:hover:before {
+    width: 30px; }
+  .button-red:hover:after {
+    width: 15px; }
   .button-red, .button_gray {
     margin-left: -15px;
     margin-right: -15px;

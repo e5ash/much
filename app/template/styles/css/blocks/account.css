@@ -1,5 +1,6 @@
 .account {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  display: block; }
   .account_add:hover .account__face {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);

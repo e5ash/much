@@ -41,7 +41,9 @@ gulp.task('scripts', function() {
 	return gulp.src([ 
 		'app/template/libs/jquery/dist/jquery.js',
 		'app/template/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
-		'app/template/libs/slick-carousel/slick/slick.js'
+		'app/template/libs/slick-carousel/slick/slick.js',
+		'app/template/libs/jquery.form-styler/dist/jquery.formstyler.js',
+		'app/template/libs/jquery.form-styler/dist/jquery.formstyler.theme.js'
 		])
 		.pipe(concat('libs.js')) 
 		.pipe(gulp.dest('app/template/scripts')); 

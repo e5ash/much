@@ -2,6 +2,89 @@
 	background: url('../../img/bg/header-subpage.png') no-repeat center top
 	background-size: cover
 	height: 80px
+	&_loggin
+		padding-top: 7%
+		background: none
+		height: auto
+		.header
+			&__logo
+				width: 200px
+				top: 0
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 5%
+			&__title
+				font-size: 36px
+				text-transform: uppercase
+				text-align: center
+				color: white
+				letter-spacing: .5px
+	&_main
+		height: auto
+		background: url('../../img/bg/bg.png') no-repeat center top
+		background-size: cover
+		padding-top: 71px
+		padding-bottom: 55px
+		color: white
+		text-align: center
+		.header
+			&:after
+				background: url('../../img/bg/triangle-bg.png') repeat-x center
+			&__logo
+				top: 0
+				width: 349px
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 63px
+			&__title
+				font-size: 36px
+				text-transform: uppercase
+				letter-spacing: 1px
+			&__dots
+				margin-top: 5px
+				margin-bottom: 10px
+			&__desc
+				max-width: 1090px
+				margin-left: auto
+				margin-right: auto
+				letter-spacing: 1px
+				font-size: 20px
+				margin-bottom: 29px
+			&__icons
+				font-size: 0
+			&__icon
+				position: relative
+				display: inline-block
+				vertical-align: top
+				height: 91px
+				line-height: 91px
+				width: 68px
+				margin-left: 48px
+				margin-right: 48px
+				&:after
+					position: absolute
+					display: block
+					bottom: -4px
+					content: ''
+					width: 68px
+					height: 4px
+					border-radius: 2px
+					background-color: #ffffff
+					margin-left: auto
+					margin-right: auto
+				.icon
+					vertical-align: bottom
+					margin-bottom: 18px
+			&__button
+				margin-top: 70px
+			&__login
+				font-size: 20px
+				font-weight: 300
+				margin-top: 13px
+				a
+					color: #f894a0
+					&:hover
+						border-color: #f894a0
 	&__logo
 		display: block
 		position: relative
@@ -41,6 +124,16 @@
 			padding-right: 15px
 		&__logo
 			top: 19px
+		&_main
+			padding-top: 34px
+			.header
+				&__logo
+					margin-bottom: 15px
+				&__desc
+					.color-blue
+						color: white
+				&__button
+					margin-top: 50px
 			
 @media screen and (max-width: 991px)
 	.header
@@ -54,9 +147,37 @@
 	.header
 		&__logo
 			width: 210px
+		&_main
+			.header
+				&__logo
+					max-width: 100%
+					padding-top: 0
+				&__title
+					font-size: 25px
+				&__desc
+					font-size: 15px
+					margin-bottom: 7px
+				&__button
+					margin-top: 30px
+				&__icon
+					width: 43px
+					margin-left: 20px
+					margin-right: 20px
+					height: 68px
+					line-height: 68px
+					&:after
+						width: 43px
+					.icon
+						transform: scale(.7)
+						margin-bottom: 0
+						&-linkedin, &-twitter
+							position: relative
+							top: -3px
 @media screen and (max-width: 450px)
 	.header
 		height: 100px
+		&_main, &_loggin
+			height: auto
 		&__logo
 			width: 148px
 			padding-top: 23px
@@ -72,4 +193,15 @@
 				width: 85px
 				margin: 0
 
-			
+@media screen and (max-width: 390px)
+	.header
+		&_main
+			.header
+				&__icon
+					margin-left: 10px
+					margin-right: 10px
+					&:first-of-type
+						margin-left: 0
+
+					&:last-of-type
+						margin-right: 0

@@ -1,4 +1,17 @@
 .footer
+	&_loggin
+		.footer
+			&__links
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				padding-bottom: 30px
+				a
+					color: white
+					&:hover
+						color: white
+						opacity: .5
 	&__links
 		text-align: center
 		font-weight: 500
@@ -15,3 +28,11 @@
 	&__button
 		margin-bottom: 60px
 		
+
+@media screen and (max-height: 767px)
+	.footer
+		&_loggin
+			height: 100%
+			.footer
+				&__links
+					position: relative
