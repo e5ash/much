@@ -14,7 +14,8 @@
 			text-align: center
 			width: 410px
 			letter-spacing: .4px
-
+	&__content
+		display: inline
 	&__checkbox
 		margin-right: 13px !important
 	&__input
@@ -32,3 +33,56 @@
 			color: #bc4352
 			&:hover
 				border-color: #bc4352
+
+
+@media screen and (max-width: 767px)
+	.example
+		&__input
+			display: block
+			margin-left: 35px
+			width: 210px
+			margin-top: 10px
+		&__content
+			display: block
+		&__checkbox
+			margin-right: 3px !important
+			
+@media screen and (max-width: 590px)
+	.example
+		&__wrap
+			margin-left: 0
+			margin-left: auto
+			margin-right: auto
+			max-width: 100%
+		&__img
+			img
+				max-width: 100%
+			p
+				top: 21%
+				width: 100%
+				left: 0
+
+@media screen and (max-width: 510px)
+	.example
+		&__img
+			p
+				top: 20%
+
+@media screen and (max-width: 430px)
+	.example
+		&__img
+			p
+				top: 19%
+
+@media screen and (max-width: 360px)
+	.example
+		&__img
+			p
+				top: 18%
+				letter-spacing: 0
+
+@media screen and (max-width: 330px)
+	.example
+		&__img
+			p
+				top: 17%

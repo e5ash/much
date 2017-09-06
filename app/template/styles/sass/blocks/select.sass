@@ -5,18 +5,29 @@
 	&_open
 		.select
 			&__list
+				display: block
 				opacity: 1
 				z-index: 10
 	&_gray
 		p
 			background-color: #dae1e3
+	&_default
+		display: block
+		width: 100%
+		p
+			border: 1px solid #dae1e3
+			width: 100%
+		.select
+			&__list
+				border: 1px solid #dae1e3
+				background: white
 	p
 		position: relative
 		width: 100%
 		// background: #dbe2e4
 		padding: 14.5px 35px 14.5px 15px
 		border-radius: 5px
-		
+		font-size: 15px
 		cursor: pointer
 		&:before
 			position: absolute
@@ -24,10 +35,11 @@
 			right: 11px
 			content: ''
 			background-image: url(../../img/sprite.png)
-			background-position: -46px -39px
+			background-position: -274px -72px
 			width: 8px
 			height: 4px
 	&__list
+		display: none
 		opacity: 0
 		z-index: -2
 		position: absolute
@@ -36,7 +48,9 @@
 		border-radius: 5px
 		left: 0
 		top: 51px
+		height: 200px
 		transition: .3s
+		overflow-y: auto
 		&-item
 			font-size: 12px
 			display: block
@@ -50,3 +64,10 @@
 				background: #CAD0D2
 	&__parsing
 		display: none
+
+	&_md
+		width: 308px
+	&_sm
+		width: 140px
+	&_xs
+		width: 63px

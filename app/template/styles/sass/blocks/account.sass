@@ -46,3 +46,49 @@
 		text-align: center
 		padding-top: 2px
 		color: #bc4352
+
+@media screen and (max-width: 1199px)
+	.account
+		width: 63px
+		&__face
+			width: 63px
+			height: 63px
+			img
+				width: 100%
+				height: 100%
+		&__title
+			span
+				display: none
+		&_add
+			.account
+				&__face
+					&:before
+						top: 14px
+						left: 31px
+					&:after
+						left: 14px
+						top: 31px
+
+					
+@media screen and (max-width: 991px)
+	.account
+		width: 80px
+		&__face
+			width: 80px
+			height: 80px
+		&_add
+			.account
+				&__face
+					&:before
+						top: 22px
+						left: 40px
+					&:after
+						left: 22px
+						top: 40px
+
+
+@media (max-width: 767px)
+	.account
+		display: inline-block
+		vertical-align: top
+		margin: 0 15px 15px

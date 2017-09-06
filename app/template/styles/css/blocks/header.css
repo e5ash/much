@@ -1,5 +1,6 @@
 .header {
   background: url("../../img/bg/header-subpage.png") no-repeat center top;
+  background-size: cover;
   height: 80px; }
   .header__logo {
     display: block;
@@ -38,3 +39,38 @@
               border-radius: 50%;
       width: 68px;
       height: 68px; }
+
+@media screen and (max-width: 1199px) {
+  .header .row {
+    padding-right: 15px; }
+  .header__logo {
+    top: 19px; } }
+
+@media screen and (max-width: 991px) {
+  .header .row {
+    padding-right: 0; }
+  .header__face img {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 210px; } }
+
+@media screen and (max-width: 450px) {
+  .header {
+    height: 100px; }
+    .header__logo {
+      width: 148px;
+      padding-top: 23px;
+      top: 0; }
+    .header__links {
+      text-align: center;
+      padding-top: 23px; }
+      .header__links ul {
+        float: right; }
+      .header__links li, .header__links a {
+        display: block; }
+      .header__links li {
+        width: 85px;
+        margin: 0; } }

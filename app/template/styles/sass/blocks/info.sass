@@ -2,6 +2,8 @@
 	position: absolute
 	top: 37px
 	right: 15px
+	text-transform: none
+	font-size: 0
 	&_active
 		.info
 			&__i
@@ -17,10 +19,11 @@
 		transition: .3s
 		.icon
 			position: relative
+			top: 6px
 			left: 1px
-			top: 1px
 
 	&__wrap
+		z-index: 10
 		display: none
 		position: absolute
 		width: 265px
@@ -49,3 +52,43 @@
 		transition: .5s
 		&:hover
 			transform: rotate(90deg)
+
+.title
+	.info
+		top: 0
+		line-height: normal
+		font-weight: 500
+		&__i
+			.icon
+				// top: -2px
+			
+
+
+@media screen and (max-width: 1390px)
+	.info
+		&__wrap
+			left: -230px
+			&:after
+				left: auto
+				right: 14px
+@media screen and (max-width: 991px)
+	.info
+		right: 3px
+		&__close
+			transform: rotate(0) !important
+
+@media screen and (max-width: 767px)
+	.info
+		position: static
+		top: 0
+		left: 0
+		display: inline-block
+		vertical-align: top
+		&__wrap
+			width: 280px
+			left: 50%
+			margin-left: -140px
+			bottom: auto
+			top: 10px
+			&:after
+				display: none

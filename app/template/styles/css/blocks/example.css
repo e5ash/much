@@ -14,6 +14,9 @@
     width: 410px;
     letter-spacing: .4px; }
 
+.example__content {
+  display: inline; }
+
 .example__checkbox {
   margin-right: 13px !important; }
 
@@ -33,3 +36,44 @@
     color: #bc4352; }
     .example__link a:hover {
       border-color: #bc4352; }
+
+@media screen and (max-width: 767px) {
+  .example__input {
+    display: block;
+    margin-left: 35px;
+    width: 210px;
+    margin-top: 10px; }
+  .example__content {
+    display: block; }
+  .example__checkbox {
+    margin-right: 3px !important; } }
+
+@media screen and (max-width: 590px) {
+  .example__wrap {
+    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; }
+  .example__img img {
+    max-width: 100%; }
+  .example__img p {
+    top: 21%;
+    width: 100%;
+    left: 0; } }
+
+@media screen and (max-width: 510px) {
+  .example__img p {
+    top: 20%; } }
+
+@media screen and (max-width: 430px) {
+  .example__img p {
+    top: 19%; } }
+
+@media screen and (max-width: 360px) {
+  .example__img p {
+    top: 18%;
+    letter-spacing: 0; } }
+
+@media screen and (max-width: 330px) {
+  .example__img p {
+    top: 17%; } }

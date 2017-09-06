@@ -1,0 +1,84 @@
+.contacts {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 80px; }
+  .contacts__mail {
+    position: relative;
+    background-color: #daf3fb;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    height: 167px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 75px; }
+    .contacts__mail:before {
+      z-index: 1;
+      content: '';
+      position: absolute;
+      width: 104px;
+      height: 75px;
+      top: 13px;
+      right: 13px;
+      background: url("../../img/bg/mail.png"); }
+    .contacts__mail p {
+      z-index: 2;
+      position: relative;
+      margin-bottom: 0; }
+    .contacts__mail a {
+      font-weight: 900;
+      color: #bc4352;
+      border-bottom: 2px solid #bc4352;
+      margin-left: 4px;
+      letter-spacing: 0px; }
+      .contacts__mail a:hover {
+        border-color: transparent; }
+  .contacts__title {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 40px; }
+  .contacts__input {
+    margin-bottom: 30px; }
+    .contacts__input input {
+      font-style: italic; }
+  .contacts__textarea textarea {
+    font-style: italic; }
+  .contacts__button {
+    float: right; }
+
+@media screen and (max-width: 1199px) {
+  .contacts__mail {
+    padding-top: 55px; }
+  .contacts__title {
+    font-size: 18px;
+    margin-top: -2px; } }
+
+@media screen and (max-width: 991px) {
+  .contacts {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .contacts__mail {
+      margin-bottom: 37px;
+      margin-left: -15px;
+      margin-right: -15px;
+      overflow: hidden; }
+      .contacts__mail:before {
+        right: -20px; }
+      .contacts__mail span {
+        display: block; } }
+
+@media screen and (max-width: 767px) {
+  .contacts__mail {
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  .contacts__input input {
+    text-align: center; }
+  .contacts__textarea textarea {
+    text-align: center; }
+  .contacts__button {
+    float: none; } }

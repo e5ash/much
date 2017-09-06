@@ -11,3 +11,6 @@
     color: #aeb0b1; }
     .footer__links a:hover {
       color: #363f41; }
+
+.footer__button {
+  margin-bottom: 60px; }

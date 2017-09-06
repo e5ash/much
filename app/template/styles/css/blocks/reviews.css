@@ -1,0 +1,78 @@
+.reviews {
+  z-index: 1;
+  position: relative;
+  background: white;
+  margin-bottom: 110px; }
+  .reviews__list .slick-arrow {
+    display: none !important; }
+  .reviews__list .slick-dots li {
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 1px solid #cbcecf;
+    margin-left: 8.5px;
+    margin-right: 8.5px; }
+    .reviews__list .slick-dots li.slick-active {
+      background: #46c6ea;
+      border-color: #46c6ea; }
+  .reviews__list .slick-dots button {
+    display: none; }
+  .reviews__item {
+    padding-top: 65px; }
+  .reviews__persona {
+    font-size: 0; }
+  .reviews__img img {
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .reviews__img, .reviews__data {
+    display: inline-block;
+    vertical-align: middle; }
+  .reviews__data {
+    margin-left: 24px;
+    width: 105px; }
+    .reviews__data p {
+      font-size: 20px; }
+    .reviews__data span {
+      font-size: 15px; }
+  .reviews__content {
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 58px; }
+
+@media screen and (max-width: 767px) {
+  .reviews__item {
+    padding-top: 30px; }
+  .reviews__list {
+    position: relative; }
+    .reviews__list .slick-arrow {
+      display: block !important;
+      width: auto;
+      height: auto;
+      top: 130px; }
+      .reviews__list .slick-arrow:before {
+        display: none; }
+    .reviews__list .slick-prev {
+      left: 0; }
+    .reviews__list .slick-next {
+      right: 0; }
+    .reviews__list .slick-dots {
+      display: none; }
+  .reviews__img, .reviews__data {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .reviews__img {
+    margin-bottom: 20px; }
+    .reviews__img img {
+      margin-left: auto;
+      margin-right: auto; }
+  .reviews__content {
+    margin-top: 20px;
+    padding: 0; } }

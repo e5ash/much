@@ -1,0 +1,88 @@
+.plan {
+  padding: 16px 20px 0;
+  text-align: center;
+  background: white; }
+  .plan_blue {
+    color: white;
+    background: #46c6ea; }
+    .plan_blue:before, .plan_blue:after {
+      z-index: 0;
+      content: '';
+      width: 25px;
+      background: #69e3f5;
+      height: 120px;
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      left: -57px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .plan_blue:after {
+      bottom: 38px;
+      left: -18px;
+      width: 15px;
+      background: #54d1ee; }
+    .plan_blue .plan__title span {
+      color: white; }
+    .plan_blue .plan__data li:before {
+      border-color: white; }
+  .plan__title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 70px; }
+    .plan__title span {
+      font-weight: 500;
+      color: #63d0ef; }
+  .plan__data li {
+    margin-bottom: 20px;
+    display: block; }
+    .plan__data li:before {
+      display: block;
+      content: '';
+      width: 9px;
+      height: 9px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #bc4352;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3px; }
+  .plan__price {
+    margin-top: 10px;
+    padding-bottom: 50px; }
+  .plan__currency, .plan__count {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 100; }
+  .plan__currency {
+    position: relative;
+    top: 17px;
+    font-size: 35px; }
+  .plan__count {
+    font-size: 75px;
+    line-height: 60px; }
+  .plan__term {
+    margin-top: 8px;
+    font-weight: 300; }
+  .plan__trial {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .5px; }
+
+@media screen and (max-width: 991px) {
+  .plan__title {
+    margin-bottom: 20px; }
+  .plan__data li {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%; }
+    .plan__data li:before {
+      display: none; } }
+
+@media screen and (max-width: 767px) {
+  .plan__price {
+    padding-bottom: 34px; } }

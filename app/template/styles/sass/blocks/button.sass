@@ -3,9 +3,17 @@
 	font-family: Roboto
 	transition: .3s
 	cursor: pointer
+	text-align: center
 	&-xs
 		font-size: 12px
 		background: #bd4151
+		width: 80px
+		color: white
+		text-align: center
+		border-radius: 4px
+		padding: 5px 13px
+		&:hover
+			opacity: .8
 	&-red
 		display: block
 		width: 362px
@@ -57,3 +65,76 @@
 			top: -30px
 			left: 105px
 			transform: rotate(-45deg)
+	&_gray
+		width: 362px
+		line-height: 60px
+		border-radius: 5px
+		background-color: #9e9e9e
+		color: white
+		font-size: 20px
+		text-transform: uppercase
+		letter-spacing: 1px
+		&:hover
+			background: #919191
+	&-small
+		display: block
+		width: 261px
+		height: 43px
+		color: white
+		line-height: 43px
+		box-shadow: 0 7px 15px rgba(0, 0, 0, 0.29)
+		border-radius: 5px
+		background-color: #bc4352
+		font-size: 20px
+		text-transform: uppercase
+		letter-spacing: 1px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 35px
+		position: relative
+		overflow: hidden
+		&:hover
+			box-shadow: none
+			&:before, &:after
+				width: 300px
+				transform: translateX(-370px)
+			&:after
+				transform: translateX(370px)
+		span
+			position: relative
+			z-index: 2
+		&:before, &:after
+			transition: .3s
+		&:before
+			z-index: 1
+			content: ''
+			width: 30px
+			background: #de627a
+			height: 120px
+			display: block
+			position: absolute
+			top: -30px
+			left: 55px
+			transform: rotate(-45deg)
+		&:after
+			z-index: 1
+			content: ''
+			width: 15px
+			background: #ca4e61
+			height: 120px
+			display: block
+			position: absolute
+			top: -30px
+			left: 105px
+			transform: rotate(-45deg)
+@media (max-width: 767px)
+	.button
+		&-red, &_gray
+			margin-left: -15px
+			margin-right: -15px
+			width: calc(100% + 30px)
+			border-radius: 0
+@media (max-width: 450px)
+	.button
+		&-xs
+			width: 85px

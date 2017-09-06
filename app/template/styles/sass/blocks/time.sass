@@ -3,15 +3,9 @@
 		display: inline-block
 		vertical-align: middle
 	&__input
-		border-radius: 5px
-		border: 1px solid #dae1e3
-		width: 63px
-		padding: 14.5px 15px
-		font-size: 15px
-		font-weight: 500
-		font-family: Roboto
-		outline: none
-		&::placeholder
+		input
+			text-transform: uppercase
+		::placeholder
 			color: #363f41
 	&__text
 		&_start
@@ -23,3 +17,18 @@
 			// ml
 	&__select
 		margin-right: 10px !important
+
+@media screen and (max-width: 767px)
+	.time
+		&__text
+			&_end, 
+				display: none
+			&_line
+				margin-left: 20px
+				
+		.select
+			display: none
+		&__input
+			width: 83px
+			input
+				padding-right: 0

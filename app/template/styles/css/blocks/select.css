@@ -3,16 +3,27 @@
   display: inline-block;
   vertical-align: middle; }
   .select_open .select__list {
+    display: block;
     opacity: 1;
     z-index: 10; }
   .select_gray p {
     background-color: #dae1e3; }
+  .select_default {
+    display: block;
+    width: 100%; }
+    .select_default p {
+      border: 1px solid #dae1e3;
+      width: 100%; }
+    .select_default .select__list {
+      border: 1px solid #dae1e3;
+      background: white; }
   .select p {
     position: relative;
     width: 100%;
     padding: 14.5px 35px 14.5px 15px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
+    font-size: 15px;
     cursor: pointer; }
     .select p:before {
       position: absolute;
@@ -20,10 +31,11 @@
       right: 11px;
       content: '';
       background-image: url(../../img/sprite.png);
-      background-position: -46px -39px;
+      background-position: -274px -72px;
       width: 8px;
       height: 4px; }
   .select__list {
+    display: none;
     opacity: 0;
     z-index: -2;
     position: absolute;
@@ -33,8 +45,10 @@
             border-radius: 5px;
     left: 0;
     top: 51px;
+    height: 200px;
     -webkit-transition: .3s;
-    transition: .3s; }
+    transition: .3s;
+    overflow-y: auto; }
     .select__list-item {
       font-size: 12px;
       display: block;
@@ -50,3 +64,9 @@
         background: #CAD0D2; }
   .select__parsing {
     display: none; }
+  .select_md {
+    width: 308px; }
+  .select_sm {
+    width: 140px; }
+  .select_xs {
+    width: 63px; }

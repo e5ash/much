@@ -1,0 +1,20 @@
+.textarea textarea {
+  color: #363f41;
+  padding: 14.5px 15px;
+  height: 125px;
+  width: 100%;
+  font-size: 15px;
+  font-family: Roboto;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #dae1e3;
+  resize: none;
+  outline: none; }
+  .textarea textarea::-webkit-input-placeholder {
+    color: #363f41; }
+  .textarea textarea::-moz-placeholder {
+    color: #363f41; }
+  .textarea textarea:-ms-input-placeholder {
+    color: #363f41; }
+  .textarea textarea::placeholder {
+    color: #363f41; }

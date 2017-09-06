@@ -1,0 +1,10 @@
+.step {
+  float: left;
+  width: 560px;
+  -webkit-transition: .5s;
+  transition: .5s; }
+  .step_active {
+    display: block; }
+  .step_final {
+    text-align: center;
+    font-size: 20px; }

@@ -1,0 +1,11 @@
+.triangles {
+  position: relative; }
+  .triangles:after {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 33px;
+    left: 0;
+    bottom: 0;
+    background: url("../../img/bg/triangle-bg.png") repeat-x center; }

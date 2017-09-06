@@ -1,0 +1,97 @@
+.plan
+	padding: 16px 20px 0
+	text-align: center
+	background: white
+	&_blue
+		color: white
+		background: #46c6ea
+		&:before, &:after
+			z-index: 0
+			content: ''
+			width: 25px
+			background: #69e3f5
+			height: 120px
+			display: block
+			position: absolute
+			bottom: 35px
+			left: -57px
+			-webkit-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:after
+			bottom: 38px
+			left: -18px
+			width: 15px
+			background: #54d1ee
+		.plan
+			&__title
+				span
+					color: white
+				
+			&__data
+				li
+					&:before
+						border-color: white
+	&__title
+		font-weight: 100
+		text-transform: uppercase
+		font-size: 36px
+		text-align: center
+		margin-bottom: 70px
+		span
+			font-weight: 500
+			color: #63d0ef
+	&__data
+		li
+			margin-bottom: 20px
+			display: block
+			&:before
+				display: block
+				content: ''
+				width: 9px
+				height: 9px
+				border-radius: 3px
+				border: 1px solid #bc4352
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 3px
+	&__price
+		margin-top: 10px
+		padding-bottom: 50px
+	&__currency, &__count
+		display: inline-block
+		vertical-align: middle
+		font-weight: 100
+	&__currency
+		position: relative
+		top: 17px
+		font-size: 35px
+	&__count
+		font-size: 75px
+		line-height: 60px
+	&__term
+		margin-top: 8px
+		font-weight: 300
+	&__trial
+		font-size: 20px
+		font-weight: 300
+		text-transform: uppercase
+		letter-spacing: .5px
+		
+
+@media screen and (max-width: 991px)
+	.plan
+		&__title
+			margin-bottom: 20px
+			
+		&__data
+			li
+				display: inline-block
+				vertical-align: top
+				width: 50%
+				&:before
+					display: none
+@media screen and (max-width: 767px)
+	.plan
+		&__price
+			padding-bottom: 34px

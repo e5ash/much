@@ -1,0 +1,83 @@
+.why
+	background: #e9fbff
+	padding-top: 68px
+	padding-bottom: 54px
+	&__title
+		padding-bottom: 50px
+	&__subtitle
+		position: relative
+		font-size: 36px
+		padding-left: 67px
+		margin-bottom: 20px
+		&:before
+			position: absolute
+			content: ''
+			width: 49px
+			height: 68px
+			left: 0
+			top: 10px
+			background: url('../../img/bg/rectangle.png') no-repeat center
+	.col-md-4
+		&:nth-of-type(2)
+			.why__item
+				padding-left: 16px
+				// .why__img
+				// 	margin-left: 16px
+		&:nth-of-type(3)
+			.why__item
+				// padding-left: 32px
+				// .why__img
+				// 	margin-left: 6px
+
+@media screen and (max-width: 1199px)
+	.why
+		padding-top: 20px
+		padding-bottom: 35px
+		&__title
+			padding-bottom: 20px
+		.img-money-pig
+			position: relative
+			left: 20px
+
+
+@media screen and (max-width: 767px)
+	.why
+		padding-bottom: 5px
+		&__subtitle
+			padding-left: 0
+			font-size: 20px
+			&:before
+				position: relative
+				display: block
+				margin-bottom: 8px
+				background-image: url("../../img/bg/rectangle-gray.png")
+			&:after
+				opacity: 0
+				display: block
+				content: ''
+				position: relative
+				background-image: url(../../img/sprite.png)
+				background-position: -274px -49px
+				width: 18px
+				height: 11px
+				margin-left: 21px
+				margin-top: 15px
+
+		&__item
+			width: 85px
+			margin-left: auto
+			margin-right: auto
+			cursor: pointer
+			&_active
+				.why
+					&__subtitle
+						&:before
+							background-image: url("../../img/bg/rectangle.png")
+						&:after
+							opacity: 1
+
+		&__list
+			.col
+				&:nth-of-type(1), &:nth-of-type(2)
+					float: right
+			

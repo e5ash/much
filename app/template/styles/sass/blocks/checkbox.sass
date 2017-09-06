@@ -17,6 +17,7 @@
 		position: relative
 		padding-left: 35px
 		cursor: pointer
+		display: inline-block
 		&:before
 			content: ''
 			position: absolute
@@ -33,7 +34,7 @@
 			left: 4px
 			top: 6px
 			background-image: url(../../img/sprite.png)
-			background-position: -42px -30px
+			background-position: -257px -158px
 			width: 12px
 			height: 9px
 			transition: .3s
@@ -41,3 +42,11 @@
 		display: block
 		font-size: 12px
 		padding-left: 35px
+
+@media screen and (max-width: 767px)
+	.checkbox
+		&_gray
+			margin-right: 0 !important
+		label
+			br
+				display: block

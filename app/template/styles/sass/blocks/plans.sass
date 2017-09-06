@@ -1,0 +1,80 @@
+.plans
+	background: url('../../img/bg/plans.png') no-repeat center top
+	background-size: cover
+	padding-top: 22px
+	padding-bottom: 70px
+	&:after
+		// bottom: -11px
+	&__title
+		margin-bottom: 72px
+		&_bottom
+			margin-top: 47px
+			margin-bottom: 0
+	.plan
+		padding-left: 0
+		padding-right: 0
+		border-radius: 5px
+		overflow: hidden
+		position: relative
+		
+		&__price
+			padding-bottom: 20px
+			margin-top: 35px
+		&__data
+			
+		&__button
+			z-index: 1
+			width: 100%
+			border-radius: 0 0 5px 5px
+			margin-top: 0
+			&:before
+				top: -30px
+				left: 10px
+				width: 25px
+			&:after
+				left: 50px
+		&__trial
+			font-size: 25px
+			padding-top: 10px
+			padding-bottom: 12px
+			
+
+@media screen and (max-width: 1199px)
+	.plans
+		padding-bottom: 55px
+		&__title
+			margin-bottom: 25px
+			&_bottom
+				margin-top: 0
+				margin-bottom: 0
+				
+		.plan
+			margin-bottom: 28px
+			&__trial
+				padding-top: 20px
+				padding-bottom: 6px
+				
+			&__term
+				display: inline-block
+				position: relative
+				top: 25px
+				&:before
+					content: '/'
+					display: inline-block
+			&__price
+				margin-top: -10px
+@media screen and (max-width: 767px)
+	.plans
+		&__list
+			.col
+				padding-left: 0
+				padding-right: 0
+			
+		.plan
+			border-radius: 0
+			&__button
+				margin-left: 0
+				margin-right: 0
+				border-radius: 0
+			
+		

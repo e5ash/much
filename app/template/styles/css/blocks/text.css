@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.text {
+  padding-top: 48px;
+  line-height: 24px;
+  padding-bottom: 85px; }
+  .text h2 {
+    font-size: 20px;
+    margin-bottom: 3px; }
+  .text p {
+    margin-bottom: 23px; }
+    .text p.mb0 {
+      margin-bottom: 0; }
+  .text li {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 30px; }
+    .text li:before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .text li:last-of-type {
+      margin-bottom: 0; }
+  .text a {
+    color: #bc4352;
+    border-color: #bc4352; }
+    .text a:hover {
+      border-color: transparent; }
+
+@media screen and (max-width: 1199px) {
+  .text {
+    padding-top: 30px; }
+    .text li {
+      padding-left: 0; } }

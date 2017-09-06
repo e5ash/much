@@ -1,0 +1,49 @@
+.key {
+  text-align: center;
+  padding-bottom: 97px; }
+  .key__title {
+    padding-top: 58px;
+    padding-bottom: 48px; }
+  .key__icon {
+    position: relative;
+    line-height: 64px;
+    margin-bottom: 40px; }
+    .key__icon:before, .key__icon:after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 49px;
+      height: 68px;
+      top: 0;
+      background: url("../../img/bg/rectangle-gray.png") no-repeat center; }
+    .key__icon:before {
+      left: 20px; }
+    .key__icon:after {
+      right: 20px; }
+  .key__subtitle {
+    font-size: 20px; }
+
+@media screen and (max-width: 1199px) {
+  .key__icon:before {
+    left: 0; }
+  .key__icon:after {
+    right: 0; } }
+
+@media screen and (max-width: 991px) {
+  .key {
+    padding-bottom: 20px; }
+    .key__item {
+      width: 256px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 78px; }
+    .key__icon:before {
+      left: 20px; }
+    .key__icon:after {
+      right: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .key {
+    padding-bottom: 0; }
+    .key__title {
+      padding-top: 40px; } }

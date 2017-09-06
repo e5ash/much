@@ -1,7 +1,9 @@
 .info {
   position: absolute;
   top: 37px;
-  right: 15px; }
+  right: 15px;
+  text-transform: none;
+  font-size: 0; }
   .info_active .info__i {
     background-color: #46c6ea; }
   .info__i {
@@ -16,9 +18,10 @@
     transition: .3s; }
     .info__i .icon {
       position: relative;
-      left: 1px;
-      top: 1px; }
+      top: 6px;
+      left: 1px; }
   .info__wrap {
+    z-index: 10;
     display: none;
     position: absolute;
     width: 265px;
@@ -51,3 +54,39 @@
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
               transform: rotate(90deg); }
+
+.title .info {
+  top: 0;
+  line-height: normal;
+  font-weight: 500; }
+
+@media screen and (max-width: 1390px) {
+  .info__wrap {
+    left: -230px; }
+    .info__wrap:after {
+      left: auto;
+      right: 14px; } }
+
+@media screen and (max-width: 991px) {
+  .info {
+    right: 3px; }
+    .info__close {
+      -webkit-transform: rotate(0) !important;
+          -ms-transform: rotate(0) !important;
+              transform: rotate(0) !important; } }
+
+@media screen and (max-width: 767px) {
+  .info {
+    position: static;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    vertical-align: top; }
+    .info__wrap {
+      width: 280px;
+      left: 50%;
+      margin-left: -140px;
+      bottom: auto;
+      top: 10px; }
+      .info__wrap:after {
+        display: none; } }

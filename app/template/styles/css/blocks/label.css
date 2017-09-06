@@ -1,6 +1,8 @@
 .label {
   display: inline-block;
   margin-right: 20px; }
+  .label input {
+    display: none; }
   .label span {
     margin-right: 4px; }
   .label .icon {

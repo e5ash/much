@@ -1,0 +1,65 @@
+.why {
+  background: #e9fbff;
+  padding-top: 68px;
+  padding-bottom: 54px; }
+  .why__title {
+    padding-bottom: 50px; }
+  .why__subtitle {
+    position: relative;
+    font-size: 36px;
+    padding-left: 67px;
+    margin-bottom: 20px; }
+    .why__subtitle:before {
+      position: absolute;
+      content: '';
+      width: 49px;
+      height: 68px;
+      left: 0;
+      top: 10px;
+      background: url("../../img/bg/rectangle.png") no-repeat center; }
+  .why .col-md-4:nth-of-type(2) .why__item {
+    padding-left: 16px; }
+
+@media screen and (max-width: 1199px) {
+  .why {
+    padding-top: 20px;
+    padding-bottom: 35px; }
+    .why__title {
+      padding-bottom: 20px; }
+    .why .img-money-pig {
+      position: relative;
+      left: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .why {
+    padding-bottom: 5px; }
+    .why__subtitle {
+      padding-left: 0;
+      font-size: 20px; }
+      .why__subtitle:before {
+        position: relative;
+        display: block;
+        margin-bottom: 8px;
+        background-image: url("../../img/bg/rectangle-gray.png"); }
+      .why__subtitle:after {
+        opacity: 0;
+        display: block;
+        content: '';
+        position: relative;
+        background-image: url(../../img/sprite.png);
+        background-position: -274px -49px;
+        width: 18px;
+        height: 11px;
+        margin-left: 21px;
+        margin-top: 15px; }
+    .why__item {
+      width: 85px;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer; }
+      .why__item_active .why__subtitle:before {
+        background-image: url("../../img/bg/rectangle.png"); }
+      .why__item_active .why__subtitle:after {
+        opacity: 1; }
+    .why__list .col:nth-of-type(1), .why__list .col:nth-of-type(2) {
+      float: right; } }

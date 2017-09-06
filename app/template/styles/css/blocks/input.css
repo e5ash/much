@@ -17,3 +17,31 @@
       color: #949d9f; }
     .input_italic input::placeholder {
       color: #949d9f; }
+
+.input_default input {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #dae1e3;
+  padding: 14.5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto;
+  outline: none;
+  width: 100%; }
+  .input_default input::-webkit-input-placeholder {
+    color: #363f41; }
+  .input_default input::-moz-placeholder {
+    color: #363f41; }
+  .input_default input:-ms-input-placeholder {
+    color: #363f41; }
+  .input_default input::placeholder {
+    color: #363f41; }
+
+.input_md {
+  width: 295px; }
+
+.input_sm {
+  width: 140px; }
+
+.input_xs {
+  width: 63px; }
