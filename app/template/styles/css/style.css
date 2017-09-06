@@ -2068,13 +2068,16 @@ input[disabled] {
             border-radius: 5px;
     overflow: hidden;
     position: relative;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: .5s;
+    transition: .5s;
     -webkit-box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25);
             box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25); }
+    .plans .plan__title span {
+      -webkit-transition: .5s;
+      transition: .5s; }
     .plans .plan:before, .plans .plan:after {
-      -webkit-transition: .3s;
-      transition: .3s;
+      -webkit-transition: .5s;
+      transition: .5s;
       opacity: 0;
       z-index: 0;
       content: '';
@@ -2099,7 +2102,9 @@ input[disabled] {
       .plans .plan:hover:before, .plans .plan:hover:after {
         opacity: 1; }
       .plans .plan:hover .plan__title span {
-        color: white; }
+        color: white;
+        -webkit-transition: .5s;
+        transition: .5s; }
       .plans .plan:hover .plan__data li:before {
         border-color: white; }
     .plans .plan__price {

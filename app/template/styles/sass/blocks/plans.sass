@@ -16,10 +16,14 @@
 		border-radius: 5px
 		overflow: hidden
 		position: relative
-		transition: .3s
+		transition: .5s
 		box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25)
+		&__title
+			span
+				transition: .5s
+			
 		&:before, &:after
-			transition: .3s
+			transition: .5s
 			opacity: 0
 			z-index: 0
 			content: ''
@@ -47,11 +51,13 @@
 				&__title
 					span
 						color: white
+						transition: .5s
 					
 				&__data
 					li
 						&:before
 							border-color: white
+							
 		
 		&__price
 			padding-bottom: 20px
