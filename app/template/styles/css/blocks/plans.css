@@ -29,7 +29,6 @@
       z-index: 0;
       content: '';
       width: 25px;
-      background: #69e3f5;
       height: 120px;
       display: block;
       position: absolute;
@@ -37,12 +36,12 @@
       left: -57px;
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+      transform: rotate(-45deg);
+      background: rgba(255, 255, 255, 0.3); }
     .plans .plan:after {
       bottom: 38px;
       left: -18px;
-      width: 15px;
-      background: #54d1ee; }
+      width: 15px; }
     .plans .plan:hover {
       color: white;
       background: #46c6ea; }
