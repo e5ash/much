@@ -47,26 +47,28 @@
 				<!-- `Контент` -->
 				<article class="article">
 					<!-- `Регистрация` -->
-					<div class="loggin">
-						<div class="loggin__wrap">
-							<div class="steps clearfix">
-								<div class="step step_active">
-									<div class="loggin__input input input_default"><input type="text" placeholder="Your e-mail"></div>
-									<button class="loggin__button loggin__next button button-red"><span>register</span></button>
+					<form>
+						<div class="loggin">
+							<div class="loggin__wrap">
+								<div class="steps clearfix">
+									<div class="step step_active">
+										<div class="loggin__input input input_default"><input type="text" placeholder="Your e-mail"></div>
+										<button class="loggin__button loggin__next button button-red"><span>register</span></button>
+									</div>
+									<div class="step">
+										<div class="loggin__input input input_default"><input type="password" placeholder="Password"></div>
+										<div class="loggin__input input input_default"><input type="password" placeholder="Connfirm password"></div>
+										<button class="loggin__button loggin__next button button-red"><span>register</span></button>
+									</div>
+									<div class="step step_final">Successful registration!</div>
 								</div>
-								<div class="step">
-									<div class="loggin__input input input_default"><input type="text" placeholder="Password"></div>
-									<div class="loggin__input input input_default"><input type="text" placeholder="Connfirm password"></div>
-									<button class="loggin__button loggin__next button button-red"><span>register</span></button>
-								</div>
-								<div class="step step_final">Successful registration!</div>
+							</div>
+							<div class="loggin__or">
+								<div class="loggin__or-title">or login via</div>
+								<button type="submit" class="loggin__or-button button"><i class="icon icon-facebook"></i><span>facebook</span></button><button class="loggin__or-button button"><i class="icon icon-google"></i><span>google</span></button>
 							</div>
 						</div>
-						<div class="loggin__or">
-							<div class="loggin__or-title">or login via</div>
-							<button class="loggin__or-button button"><i class="icon icon-facebook"></i><span>facebook</span></button><button class="loggin__or-button button"><i class="icon icon-google"></i><span>google</span></button>
-						</div>
-					</div>
+					</form>
 					<!-- Конец `Регистрация` -->
 				</article>
 				<!-- Конец `Контент` -->

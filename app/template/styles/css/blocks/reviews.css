@@ -7,7 +7,8 @@
   .reviews__list {
     margin-bottom: 32px; }
     .reviews__list .slick-arrow {
-      display: none !important; }
+      display: none !important;
+      z-index: 1001; }
     .reviews__list .slick-dots {
       position: relative; }
       .reviews__list .slick-dots li {

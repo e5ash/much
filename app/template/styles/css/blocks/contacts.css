@@ -49,7 +49,7 @@
   .contacts__textarea textarea {
     font-style: italic; }
   .contacts__button {
-    float: right; }
+    margin-right: 0; }
 
 @media screen and (max-width: 1199px) {
   .contacts__mail {
@@ -81,4 +81,4 @@
   .contacts__textarea textarea {
     text-align: center; }
   .contacts__button {
-    float: none; } }
+    margin-right: auto; } }

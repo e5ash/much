@@ -1,8 +1,10 @@
 .step {
   float: left;
   width: 560px;
-  -webkit-transition: .5s;
-  transition: .5s; }
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s; }
   .step_active {
     display: block; }
   .step_final {

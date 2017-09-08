@@ -8,3 +8,7 @@
     vertical-align: middle;
     font-size: 15px;
     margin-bottom: 10px; }
+  .labels__input {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0; }

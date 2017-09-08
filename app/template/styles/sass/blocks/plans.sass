@@ -10,7 +10,10 @@
 		&_bottom
 			margin-top: 47px
 			margin-bottom: 0
+			span
+				display: block
 	.plan
+		display: block
 		padding-left: 0
 		padding-right: 0
 		border-radius: 5px
@@ -18,6 +21,7 @@
 		position: relative
 		transition: .5s
 		box-shadow: 0 7px 43px rgba(0, 0, 0, 0.25)
+		border-bottom: none
 		&__title
 			span
 				transition: .5s
@@ -56,8 +60,16 @@
 					li
 						&:before
 							border-color: white
-							
-		
+				&__button
+					&:before
+						width: 25px 
+						left: 10px 
+						transform: rotate(-45deg)
+					&:after
+						top: -30px
+						width: 15px 
+						left: 50px
+						transform: rotate(-45deg)
 		&__price
 			padding-bottom: 20px
 			margin-top: 35px

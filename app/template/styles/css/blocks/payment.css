@@ -68,25 +68,31 @@
     display: block !important; }
   .payment__button-stop {
     margin-left: auto !important;
-    margin-right: auto !important; } }
+    margin-right: auto !important; }
+  .payment__plans .select {
+    width: 270px; } }
 
 @media screen and (max-width: 991px) {
   .payment {
     padding-bottom: 60px; }
     .payment_paid .payment__plan {
       margin-bottom: 51px; }
+    .payment__plans .select {
+      width: 295px; }
     .payment__plan {
       margin-bottom: 72px; }
     .payment__button {
       margin-top: 57px; }
     .payment_paid .payment__title {
-      text-align: center; } }
+      text-align: center; }
+    .payment__wrap {
+      max-width: 635px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 @media screen and (max-width: 767px) {
   .payment__wrap {
-    width: 275px;
-    margin-left: auto;
-    margin-right: auto; }
+    width: 275px; }
     .payment__wrap .form-line {
       margin-bottom: 25px; }
   .payment__plan {

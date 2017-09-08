@@ -9,6 +9,8 @@
 	&:hover
 		z-index: 1 
 		box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3)
+		transform: translateX(20px)
+		border: 1px solid #47c5e9
 	&_posted
 		background: #dbf3fc
 		.post__status 
@@ -45,6 +47,7 @@
 				border-color: #bc4352
 	&__status
 		margin-right: 32px
+		cursor: pointer
 	&__remove
 		position: relative
 		top: -1px
@@ -55,6 +58,8 @@
 	.post
 		&__content
 			width: 560px
+		&:hover
+			transform: translateX(10px)
 
 @media (max-width: 991px)
 	.post

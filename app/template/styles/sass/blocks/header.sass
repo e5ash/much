@@ -91,7 +91,7 @@
 		top: 14px
 		&:hover
 			img
-				transform: scale(0.95)
+				// transform: scale(0.95)
 		img
 			transition: .3s
 	&__content
@@ -117,7 +117,10 @@
 			border-radius: 50%
 			width: 68px
 			height: 68px
-
+@media screen and (max-height: 890px)
+	.header
+		&_loggin
+			padding-top: 2%
 @media screen and (max-width: 1199px)
 	.header
 		.row

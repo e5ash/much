@@ -115,9 +115,9 @@ $(document).ready(function($) {
 	$.mask.definitions['n'] = "[1-2]";
 	$.mask.definitions['m'] = "[0-3]";
 	
-	$(".card-number").mask("9999 - 9999 - 9999 - 9999 - 9999");
-	$(".mmyy").mask("m9 / n9");
-	$(".cvc").mask("999");
+	$(".card-number").mask("9999 - 9999 - 9999 - 9999", {placeholder: "X"});
+	$(".mmyy").mask("m9 / n9", {placeholder: "X"});
+	$(".cvc").mask("999", {placeholder: "X"});
 
 	/* Accs */
 	var accsCount = $('.accounts__title span'),
@@ -167,6 +167,7 @@ $(document).ready(function($) {
 	});
 
 	$('.loggin__next').click(function() {
+		event.preventDefault();
 		var parent = $(this).parents('.step'),
 				next = parent.next('.step'),
 				count = parent.attr('data-step-count');
@@ -245,10 +246,19 @@ $(document).ready(function($) {
 	feture();
 
 
-	
-
-	
-	
+	var postNameClass = 'post_posted';
+	$('.post__status').click(function() {
+		var parent = $(this).parents('.post');
+		if (!(parent.hasClass(postNameClass))) {
+			parent.addClass(postNameClass);
+		}
+		$(this).css('cursor', 'default')
+		// parent.hide();
+	});
+	$('.post__remove').click(function() {
+		var parent = $(this).parents('.post');
+		parent.fadeOut(500);
+	});
 
 	/* Responsive */
 	$(window).on('load resize', function(event) {
