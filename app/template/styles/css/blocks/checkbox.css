@@ -38,9 +38,14 @@
     display: block;
     font-size: 12px;
     padding-left: 35px; }
+    .checkbox span i {
+      font-style: normal;
+      text-decoration: line-through; }
 
 @media screen and (max-width: 767px) {
   .checkbox_gray {
     margin-right: 0 !important; }
   .checkbox label br {
-    display: block; } }
+    display: block; }
+  .checkbox span {
+    padding-top: 5px; } }

@@ -883,7 +883,7 @@ input[disabled] {
   width: 140px; }
 
 .input_xs {
-  width: 63px; }
+  width: 72px; }
 
 @media screen and (max-width: 1199px) {
   .input_md {
@@ -1133,12 +1133,17 @@ input[disabled] {
     display: block;
     font-size: 12px;
     padding-left: 35px; }
+    .checkbox span i {
+      font-style: normal;
+      text-decoration: line-through; }
 
 @media screen and (max-width: 767px) {
   .checkbox_gray {
     margin-right: 0 !important; }
   .checkbox label br {
-    display: block; } }
+    display: block; }
+  .checkbox span {
+    padding-top: 5px; } }
 
 .select {
   position: relative;
@@ -1193,7 +1198,7 @@ input[disabled] {
     width: 63px; }
 
 .form-line {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   text-align: left; }
   .form-line:last-of-type {
     margin-bottom: 0; }
@@ -1275,7 +1280,8 @@ input[disabled] {
   padding-bottom: 85px; }
   .text h2 {
     font-size: 20px;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    text-transform: uppercase; }
   .text p {
     margin-bottom: 23px; }
     .text p.mb0 {
@@ -1357,7 +1363,9 @@ input[disabled] {
     .header_main .header__title {
       font-size: 36px;
       text-transform: uppercase;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      padding-left: 70px;
+      padding-right: 70px; }
     .header_main .header__dots {
       margin-top: 5px;
       margin-bottom: 10px; }
@@ -1449,6 +1457,9 @@ input[disabled] {
     top: 19px; }
   .header_main {
     padding-top: 34px; }
+    .header_main .header__title {
+      padding-left: 0;
+      padding-right: 0; }
     .header_main .header__logo {
       margin-bottom: 15px; }
     .header_main .header__desc .color-blue {
@@ -1491,7 +1502,10 @@ input[disabled] {
       margin-bottom: 0; }
       .header_main .header__icon .icon-linkedin, .header_main .header__icon .icon-twitter {
         position: relative;
-        top: -3px; } }
+        top: -3px; }
+  .header_loggin .header__logo {
+    width: 100%;
+    max-width: 290px; } }
 
 @media screen and (max-width: 450px) {
   .header {
@@ -1673,7 +1687,8 @@ input[disabled] {
     border-bottom: none; }
   .setting__title {
     font-size: 20px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-right: 25px; }
     .setting__title + .setting__wrap {
       margin-top: 18px; }
   .setting__desc {
@@ -1684,7 +1699,7 @@ input[disabled] {
     .setting .checkbox:last-of-type {
       margin-right: 0; }
   .setting .select {
-    margin-right: 28px; }
+    margin-right: 15px; }
 
 @media screen and (max-width: 767px) {
   .setting {
@@ -1878,19 +1893,7 @@ input[disabled] {
 
 @media screen and (max-width: 767px) {
   .info {
-    position: static;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    vertical-align: top; }
-    .info__wrap {
-      width: 280px;
-      left: 50%;
-      margin-left: -140px;
-      bottom: auto;
-      top: 10px; }
-      .info__wrap:after {
-        display: none; } }
+    right: 15px; } }
 
 .time__text, .time__input {
   display: inline-block;
@@ -1928,9 +1931,16 @@ input[disabled] {
   .time .select {
     display: none; }
   .time__input {
-    width: 83px; }
+    width: 100px; }
     .time__input input {
       padding-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .time__input {
+    width: 80px; }
+    .time__input input {
+      padding-left: 10px;
+      font-size: 14px; } }
 
 .raid-plans__title {
   position: relative;
@@ -2230,7 +2240,9 @@ input[disabled] {
       color: #63d0ef; }
   .plan__data li {
     margin-bottom: 20px;
-    display: block; }
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px; }
     .plan__data li:before {
       display: block;
       content: '';
@@ -2279,7 +2291,17 @@ input[disabled] {
 
 @media screen and (max-width: 767px) {
   .plan__price {
-    padding-bottom: 34px; } }
+    padding-bottom: 34px; }
+  .plan__data li {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .plan__count {
+    font-size: 55px;
+    line-height: 50px; }
+  .plan__currency {
+    top: 8px; }
+  .plan__term {
+    top: 17px !important; } }
 
 .payment {
   padding-bottom: 140px; }
@@ -2511,6 +2533,10 @@ input[disabled] {
         left: 19px; }
         .loggin__or-button .icon-google + span {
           padding-right: 15px; }
+
+@media screen and (max-height: 767px) {
+  .loggin__wrap {
+    padding-top: 20px; } }
 
 @media screen and (max-width: 767px) {
   .loggin__button {
@@ -2951,7 +2977,9 @@ input[disabled] {
       display: none; }
   .feture__item {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .feture__subdesc {
+    padding-top: 0 !important; } }
 
 @media screen and (max-width: 991px) {
   .feture__subdesc {
@@ -2997,7 +3025,8 @@ input[disabled] {
     position: relative;
     display: block;
     padding-left: 16px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    letter-spacing: .7px; }
     .past__sublist li:last-of-type {
       margin-bottom: 0; }
     .past__sublist li:before {

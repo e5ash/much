@@ -34,6 +34,13 @@
   .time .select {
     display: none; }
   .time__input {
-    width: 83px; }
+    width: 100px; }
     .time__input input {
       padding-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .time__input {
+    width: 80px; }
+    .time__input input {
+      padding-left: 10px;
+      font-size: 14px; } }

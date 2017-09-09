@@ -40,6 +40,8 @@
 				font-size: 36px
 				text-transform: uppercase
 				letter-spacing: 1px
+				padding-left: 70px
+				padding-right: 70px
 			&__dots
 				margin-top: 5px
 				margin-bottom: 10px
@@ -130,6 +132,9 @@
 		&_main
 			padding-top: 34px
 			.header
+				&__title
+					padding-left: 0
+					padding-right: 0
 				&__logo
 					margin-bottom: 15px
 				&__desc
@@ -176,6 +181,11 @@
 						&-linkedin, &-twitter
 							position: relative
 							top: -3px
+		&_loggin
+			.header
+				&__logo
+					width: 100%
+					max-width: 290px
 @media screen and (max-width: 450px)
 	.header
 		height: 100px

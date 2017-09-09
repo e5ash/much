@@ -77,16 +77,4 @@
 
 @media screen and (max-width: 767px) {
   .info {
-    position: static;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    vertical-align: top; }
-    .info__wrap {
-      width: 280px;
-      left: 50%;
-      margin-left: -140px;
-      bottom: auto;
-      top: 10px; }
-      .info__wrap:after {
-        display: none; } }
+    right: 15px; } }

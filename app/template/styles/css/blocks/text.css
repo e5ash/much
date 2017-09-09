@@ -5,7 +5,8 @@
   padding-bottom: 85px; }
   .text h2 {
     font-size: 20px;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    text-transform: uppercase; }
   .text p {
     margin-bottom: 23px; }
     .text p.mb0 {

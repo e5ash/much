@@ -114,6 +114,7 @@ $(document).ready(function($) {
 	$.mask.definitions['k'] = "[0-5]";
 	$.mask.definitions['n'] = "[1-2]";
 	$.mask.definitions['m'] = "[0-3]";
+	$.mask.definitions['t'] = "[0-1]";
 	
 	$(".card-number").mask("9999 - 9999 - 9999 - 9999", {placeholder: "X"});
 	$(".mmyy").mask("m9 / n9", {placeholder: "X"});
@@ -249,11 +250,8 @@ $(document).ready(function($) {
 	var postNameClass = 'post_posted';
 	$('.post__status').click(function() {
 		var parent = $(this).parents('.post');
-		if (!(parent.hasClass(postNameClass))) {
-			parent.addClass(postNameClass);
-		}
-		$(this).css('cursor', 'default')
-		// parent.hide();
+		parent.toggleClass(postNameClass);
+
 	});
 	$('.post__remove').click(function() {
 		var parent = $(this).parents('.post');
@@ -264,15 +262,15 @@ $(document).ready(function($) {
 	$(window).on('load resize', function(event) {
 		var windowWidth = $(window).width();
 		if (windowWidth > 767) {
-			$(".time__input input").mask("9.k9");
+			$(".time__input input").mask("t9.k9");
 			accsList.removeAttr('style');
 			$('.example__input input').attr('placeholder','Promotional text of your company');
 			fetureItem.removeAttr('style');
 			
 		} else {
-			$(".time__input input").mask("9.k9 hM");
-			timeInputStart.attr('placeholder','9.00 AM');
-			timeInputEnd.attr('placeholder','9.00 PM');
+			$(".time__input input").mask("t9.k9 hM");
+			timeInputStart.attr('placeholder','09.00 AM');
+			timeInputEnd.attr('placeholder','09.00 PM');
 			$('.example__input input').attr('placeholder','Promotional text...');
 			if (whyItem.hasClass('why__item_active')) {
 				var count = $('.why__item.why__item_active').attr('data-why-count'),	

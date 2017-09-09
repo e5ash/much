@@ -13,7 +13,9 @@
       color: #63d0ef; }
   .plan__data li {
     margin-bottom: 20px;
-    display: block; }
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px; }
     .plan__data li:before {
       display: block;
       content: '';
@@ -62,4 +64,14 @@
 
 @media screen and (max-width: 767px) {
   .plan__price {
-    padding-bottom: 34px; } }
+    padding-bottom: 34px; }
+  .plan__data li {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .plan__count {
+    font-size: 55px;
+    line-height: 50px; }
+  .plan__currency {
+    top: 8px; }
+  .plan__term {
+    top: 17px !important; } }

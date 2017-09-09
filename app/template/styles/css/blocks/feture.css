@@ -67,7 +67,9 @@
       display: none; }
   .feture__item {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .feture__subdesc {
+    padding-top: 0 !important; } }
 
 @media screen and (max-width: 991px) {
   .feture__subdesc {

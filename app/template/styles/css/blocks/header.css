@@ -37,7 +37,9 @@
     .header_main .header__title {
       font-size: 36px;
       text-transform: uppercase;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      padding-left: 70px;
+      padding-right: 70px; }
     .header_main .header__dots {
       margin-top: 5px;
       margin-bottom: 10px; }
@@ -129,6 +131,9 @@
     top: 19px; }
   .header_main {
     padding-top: 34px; }
+    .header_main .header__title {
+      padding-left: 0;
+      padding-right: 0; }
     .header_main .header__logo {
       margin-bottom: 15px; }
     .header_main .header__desc .color-blue {
@@ -171,7 +176,10 @@
       margin-bottom: 0; }
       .header_main .header__icon .icon-linkedin, .header_main .header__icon .icon-twitter {
         position: relative;
-        top: -3px; } }
+        top: -3px; }
+  .header_loggin .header__logo {
+    width: 100%;
+    max-width: 290px; } }
 
 @media screen and (max-width: 450px) {
   .header {
